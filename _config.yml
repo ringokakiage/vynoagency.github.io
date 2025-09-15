@@ -1,12 +1,13 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Vyno Agency
+email: contact@vynoagency.work
+description: > # this means "folded" — all lines until next key are joined into one
+  Player representation and scouting with a data-driven approach. 
+  Bridging South American talent with Asian football markets.
+baseurl: "" # leave empty if site is at root, e.g. username.github.io
+url: "https://vynoagency.github.io" # or your custom domain later
 
-twitter_username:
-github_username:
+instagram_username: vyno.agency
 
 # Build settings
 markdown: kramdown
