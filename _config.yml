@@ -1,15 +1,25 @@
 # Site settings
 title: Vyno Agency
-email: contact@vynoagency.work
+
 description: > # this means "folded" — all lines until next key are joined into one
   Player representation and scouting with a data-driven approach. 
   Bridging South American talent with Asian football markets.
 baseurl: "" # leave empty if site is at root, e.g. username.github.io
-url: "https://vynoagency.github.io" # or your custom domain later
+url: "https://vynoagency.work" # Your new custom domain
 
 instagram_username: vyno.agency
-
 email: contact@vynoagency.work
 
 # Build settings
 markdown: kramdown
+
+# SEO and Social Media
+
+logo: "/img/logo.png"  # Path to your logo
+social:
+  - name: Instagram
+    icon: "fab fa-instagram"
+    url: "https://instagram.com/vyno.agency"
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "mailto:contact@vynoagency.work"
