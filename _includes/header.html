@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VYNO Football Agency</title>
+    <title>VYNO Football Agency - Header</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -17,6 +17,8 @@
             font-family: 'Montserrat', sans-serif;
             color: #333;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         
         header {
@@ -42,12 +44,12 @@
         
         h1 {
             font-family: 'Oswald', sans-serif;
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
         
         hr {
@@ -59,15 +61,16 @@
         }
         
         .tagline {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            font-weight: 400;
+            font-size: 1.8rem;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         
-        .commitment-points {
+        .key-points {
             display: flex;
             justify-content: center;
             gap: 2rem;
@@ -81,6 +84,7 @@
             min-width: 250px;
             backdrop-filter: blur(5px);
             text-align: center;
+            border-bottom: 3px solid #e6b400;
         }
         
         .point i {
@@ -98,24 +102,26 @@
         
         .btn {
             display: inline-block;
-            padding: 15px 40px;
+            padding: 18px 45px;
             background: #e6b400;
             color: #000;
             text-decoration: none;
             border-radius: 30px;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             transition: all 0.3s ease;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
             border: 2px solid #e6b400;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
         .btn:hover {
             background: transparent;
             color: #e6b400;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
         }
         
         .scroll-indicator {
@@ -124,12 +130,13 @@
             left: 50%;
             transform: translateX(-50%);
             color: #fff;
-            font-size: 2rem;
+            font-size: 2.5rem;
             animation: bounce 2s infinite;
+            cursor: pointer;
         }
         
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
@@ -141,14 +148,14 @@
         
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
             
             .tagline {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
             }
             
-            .commitment-points {
+            .key-points {
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
@@ -167,28 +174,27 @@
             <div class="header-content-inner">
                 <h1>VYNO FOOTBALL AGENCY</h1>
                 <hr>
-                <p class="tagline">Building Careers with Integrity, Passion, and Strategic Vision</p>
+                <p class="tagline">Data-Driven Player Representation with Asian Market Expertise</p>
                 
-                <div class="commitment-points">
+                <div class="key-points">
+                    <div class="point">
+                        <i class="fas fa-database"></i>
+                        <span class="point-title">Data-Driven Approach</span>
+                        <p>Advanced analytics for talent identification</p>
+                    </div>
+                    <div class="point">
+                        <i class="fas fa-globe-asia"></i>
+                        <span class="point-title">Asian Market Focus</span>
+                        <p>Specialized in Asian player development</p>
+                    </div>
                     <div class="point">
                         <i class="fas fa-chess"></i>
-                        <span class="point-title">Strategic Career Planning</span>
-                        <p>Personalized roadmap for each player's development</p>
-                    </div>
-                    <div class="point">
-                        <i class="fas fa-handshake"></i>
-                        <span class="point-title">Ethical Representation</span>
-                        <p>Transparent, honest advocacy for our players</p>
-                    </div>
-                    <div class="point">
-                        <i class="fas fa-chart-line"></i>
-                        <span class="point-title">Maximum Value Creation</span>
-                        <p>Focused on long-term career success</p>
+                        <span class="point-title">Strategic Planning</span>
+                        <p>Long-term career development pathways</p>
                     </div>
                 </div>
                 
-                <p>We're building the next generation of football excellence through dedicated partnership and innovative approach to player management.</p>
-                <a href="#about" class="btn page-scroll">Explore Our Methodology</a>
+                <a href="#about" class="btn page-scroll">Discover Our Methodology</a>
             </div>
         </div>
         
@@ -198,7 +204,7 @@
     </header>
 
     <script>
-        // Enhanced smooth scroll functionality
+        // Smooth scroll functionality
         document.addEventListener('DOMContentLoaded', function() {
             const scrollLinks = document.querySelectorAll('.page-scroll');
             
