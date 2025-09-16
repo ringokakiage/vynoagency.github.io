@@ -1,10 +1,210 @@
-<header>
-    <div class="header-content">
-        <div class="header-content-inner">
-            <h1>Your Favorite Source of Free Bootstrap Themes</h1>
-            <hr>
-            <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYNO Football Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .header-content {
+            z-index: 1;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+        
+        .header-content-inner {
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        hr {
+            width: 100px;
+            height: 4px;
+            background: #e6b400;
+            margin: 0 auto 2rem;
+            border: none;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .commitment-points {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+        
+        .point {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            min-width: 250px;
+            backdrop-filter: blur(5px);
+            text-align: center;
+        }
+        
+        .point i {
+            font-size: 2.5rem;
+            color: #e6b400;
+            margin-bottom: 1rem;
+        }
+        
+        .point-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #e6b400;
+            color: #000;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+            border: 2px solid #e6b400;
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: #e6b400;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 2rem;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-20px) translateX(-50%); }
+            60% { transform: translateY(-10px) translateX(-50%); }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .commitment-points {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .point {
+                width: 80%;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>VYNO FOOTBALL AGENCY</h1>
+                <hr>
+                <p class="tagline">Building Careers with Integrity, Passion, and Strategic Vision</p>
+                
+                <div class="commitment-points">
+                    <div class="point">
+                        <i class="fas fa-chess"></i>
+                        <span class="point-title">Strategic Career Planning</span>
+                        <p>Personalized roadmap for each player's development</p>
+                    </div>
+                    <div class="point">
+                        <i class="fas fa-handshake"></i>
+                        <span class="point-title">Ethical Representation</span>
+                        <p>Transparent, honest advocacy for our players</p>
+                    </div>
+                    <div class="point">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="point-title">Maximum Value Creation</span>
+                        <p>Focused on long-term career success</p>
+                    </div>
+                </div>
+                
+                <p>We're building the next generation of football excellence through dedicated partnership and innovative approach to player management.</p>
+                <a href="#about" class="btn">Explore Our Methodology</a>
+            </div>
         </div>
-    </div>
-</header>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <script>
+        // Simple smooth scroll functionality
+        document.querySelector('.btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            // In a real implementation, this would scroll to your about section
+            alert("This would smoothly scroll to the About section in a complete implementation");
+        });
+    </script>
+</body>
+</html>
+</html>
