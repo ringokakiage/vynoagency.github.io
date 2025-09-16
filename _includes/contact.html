@@ -1,164 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VYNO Football Agency - Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        
-        #contact {
-            padding: 100px 0;
-            background: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            width: 100%;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .section-heading {
-            font-family: 'Oswald', sans-serif;
-            font-size: 2.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-        
-        .contact-description {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 50px;
-            color: #ccc;
-        }
-        
-        .contact-divider {
-            width: 80px;
-            height: 3px;
-            background: #e6b400;
-            margin: 25px auto;
-        }
-        
-        .contact-options {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-top: 50px;
-        }
-        
-        .contact-option {
-            flex: 1;
-            min-width: 250px;
-            max-width: 300px;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-        
-        .contact-option:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.1);
-        }
-        
-        .contact-option a {
-            color: #fff;
-            text-decoration: none;
-            display: block;
-        }
-        
-        .contact-option i {
-            font-size: 3.5rem;
-            color: #e6b400;
-            margin-bottom: 20px;
-        }
-        
-        .contact-option h3 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .contact-option p {
-            color: #ccc;
-        }
-        
-        @media (max-width: 768px) {
-            .contact-options {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .contact-option {
-                width: 100%;
-            }
-            
-            .section-heading {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-heading">Let's Connect</h2>
-            <div class="contact-divider"></div>
-            <p class="contact-description">Ready to take your career to the next level? Get in touch with us today to discuss how we can help you achieve your football dreams.</p>
-            
-            <div class="contact-options">
-                <div class="contact-option">
-                    <a href="https://instagram.com/vynofootball" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <h3>Instagram</h3>
-                        <p>Follow us for updates and insights</p>
-                        <p>@vyno.agency</p>
-                    </a>
-                </div>
-                
-                <div class="contact-option">
-                    <a href="mailto:info@vynofootball.com">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email Us</h3>
-                        <p>Send us a message directly</p>
-                        <p>contact@vynoagency.work</p>
-                    </a>
-                </div>
-                
-                <div class="contact-option">
-                    <a href="https://www.transfermarkt.com" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                        <h3>Transfermarkt</h3>
-                        <p>View our player profiles</p>
-                        <p>VYNO Agency</p>
-                    </a>
-                </div>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <hr class="primary">
+                <p>Ready to revolutionize your future? Contact us today to discuss how we can help you achieve your goals.</p>
             </div>
         </div>
-    </section>
-</body>
-</html>
+        
+        <div class="row contact-options">
+            <div class="col-lg-4 text-center">
+                <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">
+                    <i class="fab fa-instagram fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <h3>Instagram</h3>
+                    <p>@{{ site.instagram_username }}</p>
+                </a>
+            </div>
+            
+            <div class="col-lg-4 text-center">
+                <a href="mailto:{{ site.email }}">
+                    <i class="fa fa-envelope fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <h3>Email</h3>
+                    <p>{{ site.email }}</p>
+                </a>
+            </div>
+            
+            <div class="col-lg-4 text-center">
+                <a href="https://www.transfermarkt.com/vinicius-yudi-nomiyama-de-oliveira/beraterfirma/berater/14702" target="_blank">
+                    <i class="fas fa-external-link-alt fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <h3>Transfermarkt</h3>
+                    <p>VYNO Agency Profile</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.contact-options {
+    margin-top: 50px;
+}
+
+.contact-options a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-options a:hover {
+    transform: translateY(-5px);
+}
+
+.contact-options i {
+    color: #e6b400;
+    margin-bottom: 15px;
+}
+
+.contact-options h3 {
+    margin: 15px 0 10px;
+    font-weight: 600;
+}
+
+.contact-options p {
+    color: #666;
+    margin: 0;
+}
+</style>
