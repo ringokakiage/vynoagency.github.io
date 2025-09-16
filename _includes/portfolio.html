@@ -69,4 +69,89 @@
 
     </div>
   </div>
+  
+  <style>
+    /* Portfolio image sizing and styling */
+    .portfolio-box {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .portfolio-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.5s ease;
+    }
+
+    .portfolio-box:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Portfolio caption styles */
+    .portfolio-box-caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .portfolio-box:hover .portfolio-box-caption {
+      opacity: 1;
+    }
+
+    .portfolio-box-caption-content {
+      max-width: 90%;
+    }
+
+    .project-category {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .project-name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .portfolio-box {
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-box {
+        height: 200px;
+      }
+      
+      .project-category {
+        font-size: 12px;
+      }
+      
+      .project-name {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .portfolio-box {
+        height: 180px;
+      }
+    }
+  </style>
 </section>
