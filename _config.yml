@@ -23,3 +23,6 @@ social:
   - name: Email
     icon: "fas fa-envelope"
     url: "mailto:contact@vynoagency.work"
+
+
+theme: null
