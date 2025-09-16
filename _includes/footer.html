@@ -1,10 +1,39 @@
+<style>
+.site-footer {
+  background: #f8f8f8;
+  padding: 15px 0;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #e2e2e2;
+}
+
+.site-footer a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: #000;
+}
+
+.site-footer span.separator {
+  margin: 0 8px;
+  color: #ccc;
+}
+</style>
+
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-    <ul class="footer-links">
-      <li><a href="/privacy-policy/">Privacy Policy</a></li>
-      <li><a href="/terms-of-service/">Terms of Service</a></li>
-      <li><a href="/contact/">Contact</a></li>
-    </ul>
-  </div>
+  <p>
+    &copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
+  </p>
+  <p>
+    <a href="/privacy-policy/">Privacy Policy</a>
+    <span class="separator">|</span>
+    <a href="/terms-of-service/">Terms of Service</a>
+    <span class="separator">|</span>
+    <a href="/cookies-policy/">Cookies Policy</a>
+  </p>
 </footer>
