@@ -9,5 +9,7 @@ url: "https://vynoagency.github.io" # or your custom domain later
 
 instagram_username: vyno.agency
 
+email: contact@vynoagency.work
+
 # Build settings
 markdown: kramdown
