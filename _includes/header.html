@@ -1,238 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="naver-site-verification" content="88a3ab5599e9b904a05620648a943e06cefa714a" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VYNO Football Agency - Header</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
-            height: 100vh;
-            color: #fff;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        
-        .header-content {
-            z-index: 1;
-            max-width: 1200px;
-            padding: 0 20px;
-        }
-        
-        .header-content-inner {
-            animation: fadeIn 1.5s ease-in;
-        }
-        
-        h1 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 4rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-        
-        hr {
-            width: 100px;
-            height: 4px;
-            background: #e6b400;
-            margin: 0 auto 2rem;
-            border: none;
-        }
-        
-        .tagline {
-            font-size: 1.8rem;
-            margin-bottom: 2.5rem;
-            font-weight: 600;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
-        
-        .key-points {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2.5rem 0;
-        }
-        
-        .point {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-            min-width: 250px;
-            backdrop-filter: blur(5px);
-            text-align: center;
-            border-bottom: 3px solid #e6b400;
-        }
-        
-        .point i {
-            font-size: 2.5rem;
-            color: #e6b400;
-            margin-bottom: 1rem;
-        }
-        
-        .point-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 18px 45px;
-            background: #e6b400;
-            color: #000;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            transition: all 0.3s ease;
-            margin-top: 2rem;
-            border: 2px solid #e6b400;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .btn:hover {
-            background: transparent;
-            color: #e6b400;
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-        }
-        
-        .scroll-indicator {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #fff;
-            font-size: 2.5rem;
-            animation: bounce 2s infinite;
-            cursor: pointer;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
-            40% { transform: translateY(-20px) translateX(-50%); }
-            60% { transform: translateY(-10px) translateX(-50%); }
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.8rem;
-            }
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>VYNO FOOTBALL AGENCY</h1>
+            <hr>
+            <p class="tagline">Data-Driven Player Representation with Asian Market Expertise</p>
             
-            .tagline {
-                font-size: 1.4rem;
-            }
-            
-            .key-points {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-            
-            .point {
-                width: 80%;
-                padding: 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>VYNO FOOTBALL AGENCY</h1>
-                <hr>
-                <p class="tagline">Data-Driven Player Representation with Asian Market Expertise</p>
-                
-                <div class="key-points">
-                    <div class="point">
-                        <i class="fas fa-database"></i>
-                        <span class="point-title">Data-Driven Approach</span>
-                        <p>Advanced analytics for talent identification</p>
-                    </div>
-                    <div class="point">
-                        <i class="fas fa-globe-asia"></i>
-                        <span class="point-title">Asian Market Focus</span>
-                        <p>Specialized in Asian player development</p>
-                    </div>
-                    <div class="point">
-                        <i class="fas fa-chess"></i>
-                        <span class="point-title">Strategic Planning</span>
-                        <p>Long-term career development pathways</p>
-                    </div>
+            <div class="key-points">
+                <div class="point">
+                    <i class="fas fa-database"></i>
+                    <span class="point-title">Data-Driven Approach</span>
+                    <p>Advanced analytics for talent identification</p>
                 </div>
-                
-                <a href="#about" class="btn page-scroll">Discover Our Methodology</a>
+                <div class="point">
+                    <i class="fas fa-globe-asia"></i>
+                    <span class="point-title">Asian Market Focus</span>
+                    <p>Specialized in Asian player development</p>
+                </div>
+                <div class="point">
+                    <i class="fas fa-chess"></i>
+                    <span class="point-title">Strategic Planning</span>
+                    <p>Long-term career development pathways</p>
+                </div>
             </div>
+            
+            <a href="#about" class="btn page-scroll">Discover Our Methodology</a>
         </div>
-        
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </header>
+    </div>
+    
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</header>
 
-    <script>
-        // Smooth scroll functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const scrollLinks = document.querySelectorAll('.page-scroll');
-            
-            scrollLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Scroll indicator functionality
-            document.querySelector('.scroll-indicator').addEventListener('click', function() {
-                window.scrollTo({
-                    top: window.innerHeight,
-                    behavior: 'smooth'
-                });
+<style>
+    /* Move all your CSS from the old header.html here */
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+        height: 100vh;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .header-content {
+        z-index: 1;
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+    
+    .header-content-inner {
+        animation: fadeIn 1.5s ease-in;
+    }
+    
+    /* ... include ALL your existing CSS styles here ... */
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+        40% { transform: translateY(-20px) translateX(-50%); }
+        60% { transform: translateY(-10px) translateX(-50%); }
+    }
+</style>
+
+<script>
+    // Move your JavaScript here
+    document.addEventListener('DOMContentLoaded', function() {
+        const scrollLinks = document.querySelectorAll('.page-scroll');
+        
+        scrollLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
-    </script>
-</body>
-</html>
+        
+        // Scroll indicator functionality
+        document.querySelector('.scroll-indicator').addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
